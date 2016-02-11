@@ -146,6 +146,3 @@ DEPENDENCIES
   middleman (~> 3.4)
   middleman-autoprefixer
   middleman-deploy (~> 1.0)
-
-BUNDLED WITH
-   1.11.2
