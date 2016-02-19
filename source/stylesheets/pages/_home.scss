@@ -1,61 +1,48 @@
 .mainpage{
   // color: #61554F;
+  color: $gray-darker;
   p{
     font-size: 20px;
-    color: #61554F;
   }
   .btn-lg{
     padding: 10px 93px;
     border-radius: 8px;
-    margin-top: 33px;
+    margin-top: 4em;
+  }
+  h1{
+    font-size: 4em;
   }
   h2{
-    font-size: 40px;
-    color: $bpibrown;
+    font-size: 3em;
   }
 }
 
 
-.section-heading {
-  display: table;
-  white-space: nowrap;
-}
-
-.section-heading:before {
-  background: linear-gradient(to bottom, $bpibrown, $bpibrown) no-repeat left center / 95% 4px;
-  content: "";
-  display: table-cell;
-  width: 50%;
-}
-
-.section-heading:after {
-  background: linear-gradient(to bottom, $bpibrown, $bpibrown) no-repeat right center / 95% 4px;
-  content: "";
-  display: table-cell;
-  width: 50%;
-}
-
 .screencontent-holder{
-  padding: 0em 14em;
+  padding: 0em 13em;
 }
 
 @media screen and (max-width: 768px){
   .screencontent-holder{
-    padding: 0em 0em;
+    padding: 0em 2em;
   }
 }
 
 #screen1{
-  background-color: $brand-color;
   min-height: 28em;
-  h1{
-    margin-bottom: 0px;
+  background: #ED4264; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ED4264 , #FFEDBC); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ED4264 , #FFEDBC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  p{
+    font-size: 1.5em;
   }
 }
 
 #screen2{
-  background-color: white;
   min-height: 35em;
+  background-color: white;
+  color: $gray-darker;
 }
 
 #screen3{
@@ -63,31 +50,8 @@
   min-height: 35em;
 }
 
-#screen4{
-  background-color: #2F4052;
-  min-height: 19em;
-  color: white;
-  h2{
-    color: white;
-  }
-  .section-heading:before {
-  background: linear-gradient(to bottom, white, white) no-repeat left center / 95% 4px;
-  content: "";
-  display: table-cell;
-  width: 50%;
-  }
-  .section-heading:after {
-  background: linear-gradient(to bottom, white, white) no-repeat right center / 95% 4px;
-  content: "";
-  display: table-cell;
-  width: 50%;
-  }
-  .btn-lg{
-    margin-top: 4em;
-  }
-}
-
-#startup-trio{
-  margin-top: 7em;
+#manifesto{
+  text-align: justify;
+  margin-top: 5em;
 }
 
