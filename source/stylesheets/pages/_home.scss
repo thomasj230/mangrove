@@ -29,11 +29,13 @@
 }
 
 #screen1{
-  min-height: 28em;
-  background: #ED4264; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ED4264 , #FFEDBC); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #ED4264 , #FFEDBC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 34em;
+  background: #FF512F; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #FF512F, #DD2476);
+  background: -o-linear-gradient(right, #FF512F, #DD2476);
+  background: linear-gradient(to left, #FF512F, #DD2476); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
+  padding-top: 16%;
   p{
     font-size: 1.5em;
   }
@@ -48,6 +50,70 @@
 #screen3{
   background-color: #F2F5F7;
   min-height: 35em;
+  #event{
+    padding: 4em 11em;
+    #eventdate{
+      background: #EC5D57;
+      color: white;
+      height: 15em;
+      border-radius: 16px 0px 0px 16px;
+      #dateday{
+        font-size: 7em;
+        margin-bottom: -0.4em;
+      }
+      #datemonth{
+        font-size: 2em;
+      }
+    }
+    #eventcontent{
+      position: relative;
+      background: white;
+      height: 15em;
+      border-radius: 0px 16px 16px 0px;
+      padding: 2em 3em;
+      #eventitle{
+        font-weight: 600;
+        font-size: 23px;
+      }
+      #eventdescription{
+        font-size: 15px;
+        text-align: justify;
+      }
+      #eventwhere{
+        color: $gray-lighter;
+        position: absolute;
+        bottom: 2%;
+        right: 14%;
+        font-size: 78%;
+      }
+    }
+  }
+  .btn{
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  #screen3{
+    #event{
+      padding: 4em 3em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  #screen3{
+    #event{
+      padding: 1.3em;
+    }
+  }
+}
+
+
+
+#screen4{
+  background: #2C3E50;
+  color: white;
 }
 
 #manifesto{
