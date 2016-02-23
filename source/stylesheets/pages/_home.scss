@@ -10,7 +10,7 @@
     margin-top: 4em;
   }
   h1{
-    font-size: 4em;
+    font-size: 4.6em;
   }
   h2{
     font-size: 3em;
@@ -22,14 +22,12 @@
   padding: 0em 13em;
 }
 
-@media screen and (max-width: 768px){
-  .screencontent-holder{
-    padding: 0em 2em;
-  }
+.responsive-holder{
+  padding: 0em 12%;
 }
 
 #screen1{
-  min-height: 34em;
+  min-height: 41em;
   background: #FF512F; /* fallback for old browsers */
   background: -webkit-linear-gradient(right, #FF512F, #DD2476);
   background: -o-linear-gradient(right, #FF512F, #DD2476);
@@ -37,7 +35,8 @@
   color: white;
   padding-top: 16%;
   p{
-    font-size: 1.5em;
+    font-size: 1.6em;
+    color: $brand-light;
   }
 }
 
@@ -45,13 +44,71 @@
   min-height: 35em;
   background-color: white;
   color: $gray-darker;
+  #root1{
+    background-color: #DF2771;
+    background: #DF2771;
+    background: -webkit-linear-gradient(bottom, #DF2771, white);
+    background: -webkit-linear-gradient(top, #DF2771, white);
+    background: linear-gradient(to bottom, #DF2771, white);
+    padding: 38em 1em;
+    position: absolute;
+    top: -10px;
+    left: 6%;
+  }
+  #root2{
+    background-color: #FB4C37;
+    background: #FB4C37;
+    background: -webkit-linear-gradient(bottom, #FB4C37, white);
+    background: -webkit-linear-gradient(top, #FB4C37, white);
+    background: linear-gradient(to bottom, #FB4C37, white);
+    padding: 24em 1em;
+    position: absolute;
+    top: -10px;
+    right: 7%;
+  }
+  #root3{
+    background-color: #F03D4E;
+    background: #F03D4E;
+    background: -webkit-linear-gradient(bottom, #F03D4E, white);
+    background: -webkit-linear-gradient(top, #F03D4E, white);
+    background: linear-gradient(to bottom, #F03D4E, white);
+    padding: 3em 1em;
+    position: absolute;
+    top: -10px;
+    right: 42%;
+  }
+  #root4{
+    background-color: #E63063;
+    background: #E63063;
+    background: -webkit-linear-gradient(bottom, #E63063, white);
+    background: -webkit-linear-gradient(top, #E63063, white);
+    background: linear-gradient(to bottom, #E63063, white);
+    padding: 7em 1em;
+    position: absolute;
+    top: -10px;
+    left: 25%;
+  }
+  #root5{
+    background-color: #F7473F;
+    background: #F7473F;
+    background: -webkit-linear-gradient(bottom, #F7473F, white);
+    background: -webkit-linear-gradient(top, #F7473F, white);
+    background: linear-gradient(to bottom, #F7473F, white);
+    padding: 8em 1em;
+    position: absolute;
+    top: -10px;
+    right: 21%;
+  }
+  #wave{
+    background-image: url("wave");
+  }
 }
 
 #screen3{
   background-color: #F2F5F7;
   min-height: 35em;
   #event{
-    padding: 4em 11em;
+    padding: 4em 11em 0.5em;
     #eventdate{
       background: #EC5D57;
       color: white;
@@ -63,6 +120,13 @@
       }
       #datemonth{
         font-size: 2em;
+      }
+      #eventwhere{
+        position: absolute;
+        bottom: 2%;
+        right: 9%;
+        font-size: 78%;
+        color: #FDB3B0;
       }
     }
     #eventcontent{
@@ -79,32 +143,104 @@
         font-size: 15px;
         text-align: justify;
       }
-      #eventwhere{
-        color: $gray-lighter;
-        position: absolute;
-        bottom: 2%;
-        right: 14%;
-        font-size: 78%;
+      #eventcta{
+        margin-top: 4em;
       }
     }
   }
   .btn{
     margin-top: 0;
+    padding: 10px 17px;
+    border-radius: 8px;
+    margin: -2em 0.4em -0.5em;
+  }
+  #eventbrite{
+      background-color: #ff8000;
+      border-color: #e37200;
+      &:hover{
+        background-color: #ef6124;
+      }
+  }
+  .eventimg{
+    width: 18px;
+    padding-bottom: 4px;
+    margin-right: 7px;
+  }
+  h3{
+    color: $gray-light;
+  }
+  #cantattend{
+    font-size: 15px;
+    color: $gray-lighter;
+    padding-top: 0.3em;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  #periscope{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: #EDEEF1;
+    margin: 3% 26% -3%;
+    border-radius: 11px;
+    img{
+      width: 40px;
+    }
+    a{
+      color: #3B94B5;
+      text-decoration: none;
+      &:hover{
+        color: #38BFF1;
+        text-decoration: none;
+      }
+    }
   }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1123px){
   #screen3{
     #event{
       padding: 4em 3em;
+      #eventdate{
+        height: 16em;
+      }
+      #eventcontent{
+        height: 16em;
+        #eventcta{
+          margin-top: 2em;
+        }
+      }
     }
   }
 }
 
 @media screen and (max-width: 768px){
+  .screencontent-holder{
+    padding: 0em 2em;
+  }
+  #screen1{
+    padding: 16% 10%;
+  }
   #screen3{
     #event{
       padding: 1.3em;
+      #eventcontent{
+        padding: 2em 2em;
+        border-radius: 0px 0px 16px 16px;
+      }
+      #eventdate{
+        height: 13em;
+        border-radius: 16px 16px 0px 0px;
+        #eventwhere{
+          right: 25%;
+        }
+      }
+    }
+    #periscope{
+        margin: 3% 1% -3%;
+      }
+    .btn{
+        margin: 0;
+        width: 100%;
     }
   }
 }
@@ -114,6 +250,27 @@
 #screen4{
   background: #2C3E50;
   color: white;
+  .socialmedia{
+    margin-top: 4em;
+    .fa-twitter{
+      padding-right: 0.4em;
+      font-size: 3em;
+    }
+    .fa-facebook-official{
+      padding-left: 0.4em;
+      font-size: 46px;
+    }
+    img{
+      width: 56px;
+      padding-bottom: 25px;
+      padding-left: 0.4em;
+      padding-right: 0.4em;
+    }
+  }
+  #disclaimer{
+    color: $gray-lighter;
+    padding-top: 1em;
+  }
 }
 
 #manifesto{

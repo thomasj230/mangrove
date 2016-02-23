@@ -6,9 +6,9 @@ title: mangrove
 
   <!-- SCREEN 1 -->
   <div class="col-xs-12 text-center padded" id="screen1">
-      <h1>A new kind of company.</h1>
+      <h1>It's possible.</h1>
       <p>
-        We are not working the way people use to.
+        Mangrove is a company without hierarchy, <br>based on empowerment and trust.
       </p>
       <p>
         <a class="typeform-share link" href="https://maxbraud.typeform.com/to/t5ET6n" data-mode="2" target="_blank">
@@ -20,8 +20,14 @@ title: mangrove
 
   <!-- SCREEN 2 -->
   <div class="col-xs-12 text-center padded" id="screen2">
+    <div id="wave"></div>
+    <div id="root1" class="hidden-xs"></div>
+    <div id="root2" class="hidden-xs"></div>
+    <div id="root3" class="hidden-xs"></div>
+    <div id="root4" class="hidden-xs"></div>
+    <div id="root5" class="hidden-xs"></div>
     <div class="screencontent-holder">
-      <h2>There is an other way.</h2>
+      <h2>Here's the other way.</h2>
       <div id="manifesto">
         <p>The first story is about connecting the dots.</p>
         <p>
@@ -51,34 +57,49 @@ title: mangrove
 
   <!-- SCREEN 3 -->
   <div class="col-xs-12 text-center padded" id="screen3">
-    <div class="screencontent-holder">
-      <h2 class="section-heading">Meet mangrove</h2>
+    <div class="responsive-holder">
+      <h2 class="section-heading">Love what you just read?</h2>
+      <h3>Join us in celebrating the launch of Mangrove</h3>
       <div class="row" id="event">
         <div class="col-xs-12 col-sm-4" id="eventdate">
           <p id="dateday">10</p>
           <p id="datemonth">march</p>
+          <p id="eventwhere">4 villa Gaudelet, 75011 Paris</p>
         </div>
         <div class="col-xs-12 col-sm-8" id="eventcontent">
           <p id="eventitle">How I killed your boss</p>
-          <p id="eventdescription">We are gonna do something new and maybe interesting. We'll see about that. We are gonna do something new and maybe interesting. We'll see about that.</p>
-          <p id="eventwhere">4 villa Gaudelet, 75011 Paris</p>
+          <p id="eventdescription">We are gonna do something new and maybe interesting. We'll see about that.</p>
+          <div id="eventcta">
+            <button type="button" class="btn btn-lg btn-info" id="eventbrite"><%= image_tag "eventbrite.png", class: "eventimg" %>Get a seat!
+            </button>
+            <a><p id="cantattend">Can't attend?</p></a>
+          </div>
         </div>
       </div>
-      <button type="button" class="btn btn-lg btn-info">Get a seat!
-      </button>
+      <div class="hidden" id="periscope">
+        <p><%= image_tag "periscope.png" %></p>
+        <p>Watch it live on Periscope!</p>
+        <p>Be sure to follow <a href="https://twitter.com/meetmangrove" id:"twitterhandle">@meetmangrove</a>. :)</p>
+      </div>
     </div>
   </div>
 
   <!-- SCREEN 4 -->
   <div class="col-xs-12 text-center padded" id="screen4">
     <div class="screencontent-holder">
-      <h2 class="section-heading">Stay informed</h2>
+      <h2 class="section-heading">Stay tuned to the tropics</h2>
       <p>
-        <a class="typeform-share link" href="https://maxbraud.typeform.com/to/t5ET6n" data-mode="2" target="_blank">
-          <button type="button" class="btn btn-lg btn-info">Enter email here
+        <a>
+          <button type="button" class="btn btn-lg btn-info">I'm in!
           </button>
         </a>
       </p>
+      <p id="disclaimer">We will respect your privacy.</p>
+      <div class="socialmedia">
+        <i class="fa fa-twitter"></i>
+        <%= image_tag "snapchat.png" %>
+        <i class="fa fa-facebook-official"></i>
+      </div>
     </div>
   </div>
 

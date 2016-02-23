@@ -30,6 +30,8 @@ $base-height: 1.4;
 // Scheme
 $brand-color:  #FED73B;
 
+$brand-light: rgb(243, 215, 219);
+
 $red: #EE5F5B;
 $blue: #469AE0;
 $yellow: #FDB631;
@@ -40,5 +42,5 @@ $green: #32B796;
 $gray-darker:  lighten(#000, 13.5%); // #222
 $gray-dark:    lighten(#000, 20%);   // #333
 $gray:         lighten(#000, 33.5%); // #555
-$gray-light:   lighten(#000, 46.7%); // #777
+$gray-light:   lighten(#000, 58%); // #777
 $gray-lighter: lighten(#000, 75.5%); // #eee
