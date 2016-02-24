@@ -11,6 +11,11 @@
   justify-content: space-between;
   z-index: 2;
   position: absolute;
+  img{
+    width: 5em;
+    padding-top: 2em;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 768px){

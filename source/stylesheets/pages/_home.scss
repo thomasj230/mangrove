@@ -33,10 +33,76 @@
   background: -o-linear-gradient(right, #FF512F, #DD2476);
   background: linear-gradient(to left, #FF512F, #DD2476); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
-  padding-top: 16%;
+  padding-top: 20%;
   p{
     font-size: 1.6em;
     color: $brand-light;
+  }
+}
+
+#screen1bis{
+  min-height: 20em;
+  background:  #222121;
+  // email form
+  #mc_embed_signup{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    #mce-EMAIL{
+      border-radius: 7px;
+      padding: 10px 91px 10px 20px;
+    }
+    #mc-embedded-subscribe{
+      padding: 13px 33px;
+      border-radius: 7px;
+      margin-top: 39px;
+    }
+  }
+  .btn{
+    background-color: #f9a302;
+    color: white;
+    &:hover{
+      background-color:#E29300;
+    }
+  }
+  #root1{
+    background-color: #EC3856;
+    background: #EC3856;
+    // background: -webkit-linear-gradient(bottom, #EC3856, white);
+    // background: -webkit-linear-gradient(top, #EC3856, white);
+    // background: linear-gradient(to bottom, #EC3856, white);
+    padding: 20em 1em;
+    position: absolute;
+    top: -10px;
+    right: 55.7%;
+    z-index: 2;
+  }
+  #root2{
+    background-color: #F03D4E;
+    background: #F03D4E;
+    // background: -webkit-linear-gradient(bottom, #F03D4E, white);
+    // background: -webkit-linear-gradient(top, #F03D4E, white);
+    // background: linear-gradient(to bottom, #F03D4E, white);
+    padding: 20em 1em;
+    position: absolute;
+    top: -10px;
+    right: 41.8%;
+    z-index: 2;
+  }
+  #root3{
+    background-color: #EE3A52;
+    background: #EE3A52;
+    // background: -webkit-linear-gradient(bottom, #EE3A52, white);
+    // background: -webkit-linear-gradient(top, #EE3A52, white);
+    // background: linear-gradient(to bottom, #EE3A52, white);
+    padding: 20em 1em;
+    position: absolute;
+    top: -10px;
+    right: 49%;
+    z-index: 2;
   }
 }
 
@@ -44,64 +110,6 @@
   min-height: 35em;
   background-color: white;
   color: $gray-darker;
-  #root1{
-    background-color: #DF2771;
-    background: #DF2771;
-    background: -webkit-linear-gradient(bottom, #DF2771, white);
-    background: -webkit-linear-gradient(top, #DF2771, white);
-    background: linear-gradient(to bottom, #DF2771, white);
-    padding: 38em 1em;
-    position: absolute;
-    top: -10px;
-    left: 6%;
-  }
-  #root2{
-    background-color: #FB4C37;
-    background: #FB4C37;
-    background: -webkit-linear-gradient(bottom, #FB4C37, white);
-    background: -webkit-linear-gradient(top, #FB4C37, white);
-    background: linear-gradient(to bottom, #FB4C37, white);
-    padding: 24em 1em;
-    position: absolute;
-    top: -10px;
-    right: 7%;
-  }
-  #root3{
-    background-color: #F03D4E;
-    background: #F03D4E;
-    background: -webkit-linear-gradient(bottom, #F03D4E, white);
-    background: -webkit-linear-gradient(top, #F03D4E, white);
-    background: linear-gradient(to bottom, #F03D4E, white);
-    padding: 3em 1em;
-    position: absolute;
-    top: -10px;
-    right: 42%;
-  }
-  #root4{
-    background-color: #E63063;
-    background: #E63063;
-    background: -webkit-linear-gradient(bottom, #E63063, white);
-    background: -webkit-linear-gradient(top, #E63063, white);
-    background: linear-gradient(to bottom, #E63063, white);
-    padding: 7em 1em;
-    position: absolute;
-    top: -10px;
-    left: 25%;
-  }
-  #root5{
-    background-color: #F7473F;
-    background: #F7473F;
-    background: -webkit-linear-gradient(bottom, #F7473F, white);
-    background: -webkit-linear-gradient(top, #F7473F, white);
-    background: linear-gradient(to bottom, #F7473F, white);
-    padding: 8em 1em;
-    position: absolute;
-    top: -10px;
-    right: 21%;
-  }
-  #wave{
-    background-image: url("wave");
-  }
 }
 
 #screen3{
@@ -109,43 +117,14 @@
   min-height: 35em;
   #event{
     padding: 4em 11em 0.5em;
-    #eventdate{
-      background: #EC5D57;
-      color: white;
-      height: 15em;
-      border-radius: 16px 0px 0px 16px;
-      #dateday{
-        font-size: 7em;
-        margin-bottom: -0.4em;
-      }
-      #datemonth{
-        font-size: 2em;
-      }
-      #eventwhere{
-        position: absolute;
-        bottom: 2%;
-        right: 9%;
-        font-size: 78%;
-        color: #FDB3B0;
-      }
+    #eventimg{
+      vertical-align: middle;
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 2%;
     }
-    #eventcontent{
-      position: relative;
-      background: white;
-      height: 15em;
-      border-radius: 0px 16px 16px 0px;
-      padding: 2em 3em;
-      #eventitle{
-        font-weight: 600;
-        font-size: 23px;
-      }
-      #eventdescription{
-        font-size: 15px;
-        text-align: justify;
-      }
-      #eventcta{
-        margin-top: 4em;
-      }
+    #eventbrite{
+      margin-bottom: -2em;
     }
   }
   .btn{
@@ -153,18 +132,6 @@
     padding: 10px 17px;
     border-radius: 8px;
     margin: -2em 0.4em -0.5em;
-  }
-  #eventbrite{
-      background-color: #ff8000;
-      border-color: #e37200;
-      &:hover{
-        background-color: #ef6124;
-      }
-  }
-  .eventimg{
-    width: 18px;
-    padding-bottom: 4px;
-    margin-right: 7px;
   }
   h3{
     color: $gray-light;
@@ -177,10 +144,9 @@
     cursor: pointer;
   }
   #periscope{
-    padding-top: 1em;
-    padding-bottom: 1em;
-    background: #EDEEF1;
-    margin: 3% 26% -3%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: white;
     border-radius: 11px;
     img{
       width: 40px;
@@ -200,15 +166,6 @@
   #screen3{
     #event{
       padding: 4em 3em;
-      #eventdate{
-        height: 16em;
-      }
-      #eventcontent{
-        height: 16em;
-        #eventcta{
-          margin-top: 2em;
-        }
-      }
     }
   }
 }
@@ -223,17 +180,6 @@
   #screen3{
     #event{
       padding: 1.3em;
-      #eventcontent{
-        padding: 2em 2em;
-        border-radius: 0px 0px 16px 16px;
-      }
-      #eventdate{
-        height: 13em;
-        border-radius: 16px 16px 0px 0px;
-        #eventwhere{
-          right: 25%;
-        }
-      }
     }
     #periscope{
         margin: 3% 1% -3%;
@@ -270,6 +216,18 @@
   #disclaimer{
     color: $gray-lighter;
     padding-top: 1em;
+  }
+  // email form
+  #mc_embed_signup{
+    margin-top: 11%;
+    #mce-EMAIL{
+      border-radius: 7px;
+      padding: 10px 91px 10px 20px;
+    }
+    #mc-embedded-subscribe{
+      padding: 13px 12px;
+      border-radius: 7px;
+    }
   }
 }
 
