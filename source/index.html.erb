@@ -1,5 +1,5 @@
 ---
-title: mangrove
+title: Mangrove - A new way of working is possible
 ---
 
 <div class="row mainpage">
@@ -15,7 +15,7 @@ title: mangrove
   </div>
 
   <!-- SCREEN 1BIS -->
-  <div class="col-xs-12 text-center padded" id="screen1bis">
+  <div class="col-xs-12 text-center padded hidden-xs" id="screen1bis">
     <div id="root1" class="hidden-xs"></div>
     <div id="root1fade" class="hidden-xs"></div>
     <div id="root2" class="hidden-xs"></div>
@@ -68,7 +68,7 @@ title: mangrove
           <div id="eventimg">
             <%= image_tag "event1.png", id: "eventimg" %>
           </div>
-          <div style="width:100%; text-align:left;" id="eventbrite" ><iframe  src="//eventbrite.com/tickets-external?eid=22167611924&ref=etckt" frameborder="0" height="260" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe></div>
+          <div style="width:100%; text-align:left;" id="eventbrite" ><iframe  src="//eventbrite.com/tickets-external?eid=22167611924&ref=etckt" frameborder="0" height="400" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe></div>
           <a><p id="cantattend">Can't attend?</p></a>
           <div class="hidden slideDown" id="periscope">
             <p><%= image_tag "periscope.png" %></p>
@@ -103,7 +103,7 @@ title: mangrove
       </div>
       <!-- FOR DESKTOP -->
       <div class="socialmedia hidden-xs">
-        <a href="https://twitter.com/meetmangrove" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://twitter.com/intent/follow?screen_name=meetmangrove"><i class="fa fa-twitter"></i></a>
         <div class="snapchat">
           <%= image_tag "snapchat.png" %>
           <a><%= image_tag "snapchathover.png", id:"snaphover" %></a>
@@ -114,7 +114,8 @@ title: mangrove
       </div>
       <!-- FOR SMARTPHONES -->
       <div class="socialmedia visible-xs">
-        <a href="https://twitter.com/meetmangrove" target="_blank"><i class="fa fa-twitter"></i></a>
+        <script src="https://platform.twitter.com/widgets.js"></script>
+        <a href="https://twitter.com/intent/follow?screen_name=meetmangrove"><i class="fa fa-twitter"></i></a>
         <a href="https://www.snapchat.com/add/meetmangrove" target="_blank" class="snapchat"><%= image_tag "snapchat.png" %></a>
         <a href="https://www.facebook.com/meetmangrove" target="_blank"><i class="fa fa-facebook-official"></i></a>
       </div>
