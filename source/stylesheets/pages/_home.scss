@@ -274,7 +274,7 @@
         transition: ease-in .3s;
       }
     }
-    #snapchat{
+    .snapchat{
       position: relative;
       display: inline;
       img{
@@ -290,10 +290,33 @@
         opacity: 0;
         transition: ease-in .3s;
         &:hover{
+          cursor: pointer;
           transition: ease-in .3s;
           opacity: 1;
         }
       }
+    }
+    #snapcode{
+      position: absolute;
+      width: 15%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transition: ease-in .3s;
+      z-index: 2;
+    }
+    #snapcode-bg{
+      background: black;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      opacity: 0.8;
+      transition: ease-in .7s;
     }
   }
   #disclaimer{

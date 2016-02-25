@@ -84,32 +84,38 @@ title: mangrove
   <div class="col-xs-12 text-center padded" id="screen4">
     <div class="screencontent-holder">
       <h2 class="section-heading">Stay tuned to the tropics <%= image_tag "fish.png", id: "fish" %></h2>
-      <p>
-        <div id="mc_embed_signup">
-          <form action="//meetmangrove.us12.list-manage.com/subscribe/post?u=102638a04246423d07cc940f6&amp;id=fe4537fefc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline" target="_blank" novalidate>
-            <div id="mce-responses">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div class="form-group form-group-lg">
-              <input type="email" value="" name="EMAIL" class="form-control input-lg" placeholder="email address" id="mce-EMAIL">
-            </div>
-              <input type="submit" value="I'm in!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
-          </form>
-        </div>
-      </p>
-      <p id="disclaimer">We will respect your privacy.</p>
+      <div id="staytuned">
+        <p>
+          <div id="mc_embed_signup">
+            <form action="//meetmangrove.us12.list-manage.com/subscribe/post?u=102638a04246423d07cc940f6&amp;id=fe4537fefc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline" target="_blank" novalidate>
+              <div id="mce-responses">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div class="form-group form-group-lg">
+                <input type="email" value="" name="EMAIL" class="form-control input-lg" placeholder="email address" id="mce-EMAIL">
+              </div>
+                <input type="submit" value="I'm in!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
+            </form>
+          </div>
+        </p>
+        <p id="disclaimer">We will respect your privacy.</p>
+      </div>
+      <!-- FOR DESKTOP -->
       <div class="socialmedia hidden-xs">
         <a href="https://twitter.com/meetmangrove" target="_blank"><i class="fa fa-twitter"></i></a>
-        <div id="snapchat">
+        <div class="snapchat">
           <%= image_tag "snapchat.png" %>
-          <a href="https://www.snapchat.com/add/meetmangrove" target="_blank"><%= image_tag "snapchathover.png", id:"snaphover" %></a>
+          <a><%= image_tag "snapchathover.png", id:"snaphover" %></a>
         </div>
+        <%= image_tag "snapcode.png", class: "hidden", id:"snapcode" %>
+        <div id="snapcode-bg" class="hidden"></div>
         <a href="https://www.facebook.com/meetmangrove" target="_blank"><i class="fa fa-facebook-official"></i></a>
       </div>
+      <!-- FOR SMARTPHONES -->
       <div class="socialmedia visible-xs">
         <a href="https://twitter.com/meetmangrove" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.snapchat.com/add/meetmangrove" target="_blank"><%= image_tag "snapchat.png" %></a>
+        <a href="https://www.snapchat.com/add/meetmangrove" target="_blank" class="snapchat"><%= image_tag "snapchat.png" %></a>
         <a href="https://www.facebook.com/meetmangrove" target="_blank"><i class="fa fa-facebook-official"></i></a>
       </div>
     </div>
