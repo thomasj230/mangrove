@@ -257,16 +257,43 @@
     .fa-twitter{
       padding-right: 0.4em;
       font-size: 3em;
+      color: white;
+      transition: ease-in .3s;
+      &:hover{
+        color: #df2770;
+        transition: ease-in .3s;
+      }
     }
     .fa-facebook-official{
       padding-left: 0.4em;
       font-size: 46px;
+      color: white;
+      transition: ease-in .3s;
+      &:hover{
+        color: #fe4f31;
+        transition: ease-in .3s;
+      }
     }
-    img{
-      width: 56px;
-      padding-bottom: 25px;
-      padding-left: 0.4em;
-      padding-right: 0.4em;
+    #snapchat{
+      position: relative;
+      display: inline;
+      img{
+        width: 56px;
+        padding-bottom: 25px;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+      }
+      #snaphover{
+        position: absolute;
+        left: 0;
+        bottom: -26px;
+        opacity: 0;
+        transition: ease-in .3s;
+        &:hover{
+          transition: ease-in .3s;
+          opacity: 1;
+        }
+      }
     }
   }
   #disclaimer{
@@ -284,6 +311,10 @@
       padding: 13px 12px;
       border-radius: 7px;
     }
+  }
+  #fish{
+    height: 33px;
+    margin-bottom: 4px;
   }
 }
 
