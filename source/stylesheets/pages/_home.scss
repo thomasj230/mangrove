@@ -26,7 +26,7 @@
   padding: 0em 12%;
 }
 
-#screen1{
+#brandingpossible{
   min-height: 41em;
   background: #FF512F; /* fallback for old browsers */
   background: -webkit-linear-gradient(right, #FF512F, #DD2476);
@@ -43,189 +43,42 @@
   }
 }
 
-#screen1bis{
-  min-height: 20em;
-  // background:  #222121;
-  // email form
-  #mc_embed_signup{
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    margin-top: 4%;
-    #mce-EMAIL{
-      border-radius: 7px;
-      padding: 10px 91px 10px 20px;
-    }
-    #mc-embedded-subscribe{
-      padding: 13px 12px;
-      border-radius: 0px 7px 7px 0px;
-      margin-left: -13px;
-    }
+#threepoints{
+  padding-top: 2em;
+  h2{
+    font-size: 2.5em;
   }
-  .btn{
-    background-color: #f9a302;
-    color: white;
-    &:hover{
-      background-color:#E29300;
-    }
+  img{
+    width: 73%;
+    border-radius: 50%;
   }
-  #root1{
-    background-color: #EC3856;
-    background: #EC3856;
-    // background: -webkit-linear-gradient(bottom, #EC3856, white);
-    // background: -webkit-linear-gradient(top, #EC3856, white);
-    // background: linear-gradient(to bottom, #EC3856, white);
-    padding: 12em 1em;
-    position: absolute;
-    top: -10px;
-    right: 55.7%;
-    z-index: 2;
-  }
-  #root1fade{
-    background-color: #EC3856;
-    background: #EC3856;
-    background: -webkit-linear-gradient(bottom, #EC3856, white);
-    background: -webkit-linear-gradient(top, #EC3856, white);
-    background: linear-gradient(to bottom, #EC3856, white);
-    margin-top: 17em;
-    padding: 5em 1em;
-    position: absolute;
-    top: -10px;
-    right: 55.7%;
-    z-index: 2;
-  }
-  #root2{
-    background-color: #F03D4E;
-    background: #F03D4E;
-    // background: -webkit-linear-gradient(bottom, #F03D4E, white);
-    // background: -webkit-linear-gradient(top, #F03D4E, white);
-    // background: linear-gradient(to bottom, #F03D4E, white);
-    padding: 12em 1em;
-    position: absolute;
-    top: -10px;
-    right: 41.8%;
-    z-index: 2;
-  }
-  #root2fade{
-    background-color: #F03D4E;
-    background: #F03D4E;
-    background: -webkit-linear-gradient(bottom, #F03D4E, white);
-    background: -webkit-linear-gradient(top, #F03D4E, white);
-    background: linear-gradient(to bottom, #F03D4E, white);
-    margin-top: 17em;
-    padding: 5em 1em;
-    position: absolute;
-    top: -10px;
-    right: 41.8%;
-    z-index: 2;
-  }
-  #root3{
-    background-color: #EE3A52;
-    background: #EE3A52;
-    // background: -webkit-linear-gradient(bottom, #EE3A52, white);
-    // background: -webkit-linear-gradient(top, #EE3A52, white);
-    // background: linear-gradient(to bottom, #EE3A52, white);
-    padding: 12em 1em;
-    position: absolute;
-    top: -10px;
-    right: 48.7%;
-    z-index: 2;
-  }
-  #root3fade{
-    background-color: #EE3A52;
-    background: #EE3A52;
-    background: -webkit-linear-gradient(bottom, #EE3A52, white);
-    background: -webkit-linear-gradient(top, #EE3A52, white);
-    background: linear-gradient(to bottom, #EE3A52, white);
-    margin-top: 17em;
-    padding: 5em 1em;
-    position: absolute;
-    top: -10px;
-    right: 48.7%;
-    z-index: 2;
-  }
-}
-
-#screen2{
-  min-height: 35em;
-  background-color: white;
-  color: $gray-darker;
-  // h2{
-  //   margin-top: 1.5em;
-  // }
-  p{
-    margin: 0 0 30px;
-  }
-  .boldmangrove{
-    font-weight: 600;
-  }
-  #conclusion{
-    margin-top: 3em;
-    font-style: italic;
-  }
-  #manifesto{
-  text-align: justify;
-  margin-top: 5em;
-  }
-}
-
-#screen3{
-  background-color: #F2F5F7;
-  min-height: 35em;
-  #event{
-    padding: 4em 11em 0.5em;
-    #eventimg{
-      vertical-align: middle;
-      width: 100%;
-      border-radius: 5px;
-      margin-bottom: 2%;
-    }
-    #eventbrite{
-      margin-bottom: -2em;
-    }
-  }
-  .btn{
-    margin-top: 0;
-    padding: 10px 17px;
-    border-radius: 8px;
-    margin: -2em 0.4em -0.5em;
-  }
-  h3{
-    color: $gray-light;
-  }
-  #cantattend{
-    font-size: 15px;
-    color: $gray-lighter;
-    padding-top: 0.3em;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  #periscope{
-    padding-top: 2em;
-    padding-bottom: 2em;
-    background: white;
-    border-radius: 11px;
-    img{
-      width: 40px;
-    }
-    a{
-      color: #3B94B5;
-      text-decoration: none;
-      &:hover{
-        color: #38BFF1;
-        text-decoration: none;
+  .onepoint{
+    margin-top: 5em;
+    .home-text-box{
+       padding-right: 3%;
+      padding-left: 3%;
+      padding-top: 8%;
+      padding-bottom: 8%;
+      .point-text{
+        font-size: 1.2em;
+        color: #737373;
+      }
+      .point-cta{
+        padding: 7px 12px;
+        border-radius: 7px;
+        margin-top: 2em;
       }
     }
   }
+  .rightpoint{
+    padding-right: 7%;
+  }
+  .leftpoint{
+    padding-left: 7%;
+  }
 }
 
-
-
-
-#screen4{
+#staytuned{
   background: #2C3E50;
   color: white;
   .socialmedia{
@@ -320,57 +173,44 @@
 
 // ADJUSTEMENT FOR SMALL SCREENS
 
-@media screen and (max-width: 1123px){
-  #screen3{
-    #event{
-      padding: 4em 3em;
-    }
-  }
-}
+
 
 @media screen and (max-width: 768px){
+  .mainpage{
+    h1{
+      font-size: 2.6em;
+      margin-top: 1em;
+    }
+    h2{
+      font-size: 2em;
+    }
+  }
   .screencontent-holder{
     padding: 0em 2em;
   }
   .responsive-holder{
     padding: 0em 8%;
   }
-  #screen1{
-    padding: 37% 10% 6% 10%;
-    min-height: 33em;
+  #brandingpossible{
+    padding: 30% 10% 6% 10%;
+    min-height: 27em;
     #tagline{
       padding: 2em 0%;
-    }
-  }
-  #screen2{
-    padding-top: 1em;
-    padding-bottom: 3em;
-    h2{
-      font-size: 34px;
-    }
-  }
-  #screen3{
-    #event{
-      padding: 1.3em;
-      #eventbrite{
-        iframe{
-          height: 440px;
-        }
+      p{
+        font-size: 1em;
       }
     }
-    #periscope{
-        margin: 3% 1% -3%;
-      }
-    #cantattend{
-      font-size: 24px;
-      margin-top: 19%;
+  }
+  #threepoints{
+    padding-top: 0em;
+    .rightpoint{
+      padding-right: 0;
     }
-    .btn{
-        margin: 0;
-        width: 100%;
+    .leftpoint{
+      padding-left: 0;
     }
   }
-  #screen4{
+  #staytuned{
     h2{
       padding-bottom: 1em;
     }
