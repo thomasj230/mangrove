@@ -29,4 +29,9 @@ $(function() {
     $("#snapcode-bg").toggleClass("hidden");
   });
 
+  $("#fish").click(function() {
+    $("#fish").toggleClass("floating");
+    $("#fish").toggleClass("bounce");
+  });
+
 });
