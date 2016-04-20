@@ -2,9 +2,7 @@
   min-height: 35em;
   background-color: white;
   color: $gray-darker;
-  // h2{
-  //   margin-top: 1.5em;
-  // }
+  padding-top: 0;
   p{
     margin: 0 0 30px;
   }
@@ -23,7 +21,6 @@
 
 #slideshare{
   background-color: #F2F5F7;
-  min-height: 35em;
   #event{
     padding: 4em 11em 0.5em;
     #eventimg{

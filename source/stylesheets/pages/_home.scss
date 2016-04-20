@@ -11,6 +11,11 @@
   }
   h1{
     font-size: 4.6em;
+    -webkit-animation: fadein20 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein20 1s; /* Firefox < 16 */
+     -ms-animation: fadein20 1s; /* Internet Explorer */
+      -o-animation: fadein20 1s; /* Opera < 12.1 */
+         animation: fadein20 1s;
   }
   h2{
     font-size: 3em;
@@ -33,7 +38,7 @@
   background: -o-linear-gradient(right, #FF512F, #DD2476);
   background: linear-gradient(to left, #FF512F, #DD2476); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
-  padding-top: 20%;
+  padding-top: 23%;
   #tagline{
     padding: 0em 24%;
     p{
@@ -55,7 +60,7 @@
   .onepoint{
     margin-top: 5em;
     .home-text-box{
-       padding-right: 3%;
+      padding-right: 3%;
       padding-left: 3%;
       padding-top: 8%;
       padding-bottom: 8%;
@@ -75,98 +80,6 @@
   }
   .leftpoint{
     padding-left: 7%;
-  }
-}
-
-#staytuned{
-  background: #2C3E50;
-  color: white;
-  .socialmedia{
-    margin-top: 5em;
-    .fa-twitter{
-      padding-right: 0.4em;
-      font-size: 3em;
-      color: white;
-      transition: ease-in .3s;
-      &:hover{
-        color: #df2770;
-        transition: ease-in .3s;
-      }
-    }
-    .fa-facebook-official{
-      padding-left: 0.4em;
-      font-size: 46px;
-      color: white;
-      transition: ease-in .3s;
-      &:hover{
-        color: #fe4f31;
-        transition: ease-in .3s;
-      }
-    }
-    .snapchat{
-      position: relative;
-      display: inline;
-      img{
-        width: 56px;
-        padding-bottom: 25px;
-        padding-left: 0.4em;
-        padding-right: 0.4em;
-      }
-      #snaphover{
-        position: absolute;
-        left: 0;
-        bottom: -26px;
-        opacity: 0;
-        transition: ease-in .3s;
-        &:hover{
-          cursor: pointer;
-          transition: ease-in .3s;
-          opacity: 1;
-        }
-      }
-    }
-    #snapcode{
-      position: absolute;
-      width: 15%;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      transition: ease-in .3s;
-      z-index: 2;
-    }
-    #snapcode-bg{
-      background: black;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      opacity: 0.8;
-      transition: ease-in .7s;
-    }
-  }
-  #disclaimer{
-    color: $gray-lighter;
-    padding-top: 1em;
-  }
-  // email form
-  #mc_embed_signup{
-    margin-top: 11%;
-    #mce-EMAIL{
-      border-radius: 7px;
-      padding: 10px 91px 10px 20px;
-    }
-    #mc-embedded-subscribe{
-      padding: 13px 12px;
-      border-radius: 7px;
-    }
-  }
-  #fish{
-    height: 33px;
-    margin-bottom: 9px;
   }
 }
 
@@ -192,7 +105,7 @@
     padding: 0em 8%;
   }
   #brandingpossible{
-    padding: 30% 10% 6% 10%;
+    padding: 48% 10% 6% 10%;
     min-height: 27em;
     #tagline{
       padding: 2em 0%;
@@ -216,5 +129,6 @@
     }
   }
 }
+
 
 

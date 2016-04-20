@@ -34,4 +34,6 @@ $(function() {
     $("#fish").toggleClass("bounce");
   });
 
+  $('[data-toggle="tooltip"]').tooltip();
+
 });

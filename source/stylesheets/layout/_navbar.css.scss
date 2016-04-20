@@ -6,15 +6,39 @@
   transition: all 0.3s ease;
   display: flex;
   height: 70px;
+  width: 100%;
   // padding: 0px 30px;
   align-items: center;
   justify-content: space-between;
   z-index: 2;
   position: absolute;
-  img{
-    width: 5em;
-    padding-top: 2em;
-    margin-left: 1em;
+  #logo-holder{
+    height: 7em;
+    img{
+      width: 5em;
+      padding-top: 2.5em;
+      margin-left: 0;
+    }
+  }
+
+  #menu-holder{
+    height: 7em;
+    #menu{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 1.1em;
+      li{
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+        a{
+          color: white;
+        }
+        &:hover{
+          color: white;
+        }
+      }
+    }
   }
 }
 
@@ -29,8 +53,19 @@
   //     margin-left: 83%;
   //   }
   // }
-  .logo-holder{
-    text-align: center;
+  #nav-container{
+    width: 73%;
+    #logo-holder{
+      img{
+        padding-top: 5em;
+        margin-left: -3em;
+      }
+    }
+    #menu-holder{
+      #menu{
+        font-size: 1em;
+      }
+    }
   }
 }
 

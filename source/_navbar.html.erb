@@ -1,10 +1,20 @@
 <div class="navbar-mangrove">
-  <div class="container">
+  <div class="container" id="nav-container">
     <div class="row">
-      <div class="col-xs-12">
-          <div class="logo-holder">
-            <%= image_tag "mangrove_logo_white.png" %>
+      <div class="col-xs-12 col-sm-3">
+          <div id="logo-holder">
+            <% link_to "index.html" do %><%= image_tag "mangrove_logo_white.png" %><% end %>
           </div>
+      </div>
+      <div class="col-xs-12 col-sm-9">
+        <div id="menu-holder">
+          <ul class="list-inline" id="menu">
+          <li><%= link_to "roots", "roots.html" %></li>
+          <li data-toggle="tooltip" data-placement="bottom" title="coming soon"><%= link_to "open",  "#staytuned" %></li>
+          <li data-toggle="tooltip" data-placement="bottom" title="this summer!"><%= link_to "education", "#staytuned" %></li>
+          <li><%= link_to "team", "team.html" %></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
