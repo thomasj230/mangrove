@@ -1,0 +1,42 @@
+#mangrovecore{
+  padding-top: 4em;
+  padding-bottom: 3em;
+}
+
+.mangrover{
+    padding-bottom: 2em;
+    a{
+      text-decoration: none;
+    }
+  img{
+    width: 100%;
+    max-width: 10em;
+    border-radius: 50%;
+  }
+  .mangrover-text{
+    font-weight: 600;
+    padding-top: 1em;
+    color: black;
+  }
+}
+
+#mangrovefriends{
+  padding-top: 0em;
+}
+
+.core-heading{
+  padding-bottom: 1em;
+  p{
+    color: rgba(128, 128, 128, 0.44);
+  }
+}
+
+.friends-heading{
+  padding-bottom: 2em;
+  h3{
+    margin-bottom: 3px;
+  }
+  p{
+    color: rgba(128, 128, 128, 0.44);
+  }
+}

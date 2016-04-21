@@ -1,0 +1,74 @@
+<div class="mainpage">
+
+
+  <!-- PAGE TITLE -->
+  <div class="col-xs-12 text-center page-title">
+      <h2 class="fadein20">Road to 1000</h2>
+  </div>
+
+  <!-- TEAM -->
+  <div class="col-xs-12 text-center padded" id="mangrovecore">
+    <div>
+      <h3 class="section-heading core-heading">The first five guys</h3>
+      <% i = 5 %>
+      <% data.mangrovers.each do |mangrover| %>
+        <% if i % 5 == 0 %>
+          <div class="row">
+          <div class="col-md-1"></div>
+        <% end %>
+        <div class="col-sm-4 col-md-2 mangrover">
+          <% link_to "https://twitter.com/" + mangrover[:twitter], target: "_blank" do %>
+            <div class="mangrover-img">
+              <%= image_tag "team/core/" + mangrover[:lastname].downcase + ".jpg" %>
+            </div>
+            <div class="mangrover-text">
+              <%= mangrover[:firstname] %> <%= mangrover[:lastname] %>
+            </div>
+          <% end %>
+          <% i += 1 %>
+          <% if i % 5 == 0 %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <!-- FRIENDS -->
+
+  <div class="col-xs-12 text-center padded" id="mangrovefriends">
+    <div>
+      <div class="friends-heading">
+        <h3 class="section-heading wow fadein20">And our friends</h3>
+        <p class="wow fadein20">They believe in our vision. We believe in what they do.</p>
+      </div>
+      <% j = 5 %>
+      <% data.friends.each do |friend| %>
+        <% if j % 5 == 0 %>
+          <div class="row">
+          <div class="col-md-1"></div>
+        <% end %>
+        <div class="col-sm-4 col-md-2 mangrover">
+          <% link_to "https://twitter.com/" + friend[:twitter], target: "_blank" do %>
+            <div class="mangrover-img">
+              <%= image_tag "team/friends/" + friend[:lastname].downcase + ".jpg" %>
+            </div>
+            <div class="mangrover-text">
+              <%= friend[:firstname] %> <%= friend[:lastname] %>
+            </div>
+          <% end %>
+          <% j += 1 %>
+          <% if j % 5 == 0 %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>
+
+<script>
+new WOW().init();
+</script>
+
