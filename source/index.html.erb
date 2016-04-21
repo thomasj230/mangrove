@@ -23,7 +23,9 @@ title: Mangrove - A new way of working is possible
       <div class="col-xs-12 col-sm-6 home-text-box">
         <div class="point-title wow fadein20"><h2>Adios companies!</h2></div>
         <div class="point-text wow fadein20">No boss, no office, no hours. We bet on empowerment, transparency and goodwill.</div>
-        <div class="point-cta btn btn-info wow fadein20">Discover how we work</div>
+        <% link_to "roots.html" do %>
+          <div class="point-cta btn btn-info wow fadein20">Discover how we work</div>
+        <% end %>
       </div>
     </div>
     <div class="onepoint leftpoint row">
@@ -33,7 +35,9 @@ title: Mangrove - A new way of working is possible
       <div class="col-xs-12 col-sm-6 col-sm-pull-6 home-text-box">
         <div class="point-title wow fadein20"><h2>In technology we trust</h2></div>
         <div class="point-text wow fadein20">We build and grow amazing products<br>for startups and nonprofits.</div>
-        <div class="point-cta btn btn-info wow fadein20">Hire us</div>
+        <% link_to "mailto:hello@meetmangrove.com" do %>
+          <div class="point-cta btn btn-info wow fadein20">Hire us</div>
+        <% end %>
       </div>
     </div>
     <div class="onepoint rightpoint row">
@@ -43,7 +47,9 @@ title: Mangrove - A new way of working is possible
       <div class="col-xs-12 col-sm-6 home-text-box">
         <div class="point-title wow fadein20"><h2>You have that power too.</h2></div>
         <div class="point-text wow fadein20">Want to work in a new way? <br>We can help.</div>
-        <div class="point-cta btn btn-info wow fadein20">Enroll in our next batch</div>
+        <% link_to "#staytuned" do %>
+          <div class="point-cta btn btn-info wow fadein20" data-toggle="tooltip" data-placement="bottom" title="coming August 2016">Enroll in our next batch</div>
+        <% end %>
       </div>
     </div>
   </div>
