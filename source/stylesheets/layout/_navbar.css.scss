@@ -53,12 +53,21 @@
   //     margin-left: 83%;
   //   }
   // }
+  // FOR MENU
+    #mobile-row{
+    margin-right: -101px;
+  }
+
+  .dropdown-toggle{
+    margin-top: 2.5em;
+  }
+  // END OF MENU
   #nav-container{
     width: 73%;
     #logo-holder{
       img{
-        padding-top: 5em;
-        margin-left: -3em;
+        padding-top: 1em;
+        margin-left: -2em;
       }
     }
     #menu-holder{
@@ -72,3 +81,5 @@
 .back-arrow{
   width: 6%;
 }
+
+

@@ -1,13 +1,14 @@
 <div class="navbar-mangrove">
   <div class="container" id="nav-container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-3">
+    <div class="row" id="mobile-row">
+      <div class="col-xs-6 col-sm-3">
           <div id="logo-holder">
             <% link_to "index.html" do %><%= image_tag "mangrove_logo_white.png" %><% end %>
           </div>
       </div>
-      <div class="col-xs-12 col-sm-9">
-        <div id="menu-holder">
+      <div class="col-xs-6 col-sm-9">
+        <div class="hidden-xs" id="menu-holder">
+          <!-- DESKTOP MENU -->
           <ul class="list-inline" id="menu">
           <li><%= link_to "roots", "roots.html" %></li>
           <li data-toggle="tooltip" data-placement="bottom" title="coming soon"><%= link_to "open",  "#staytuned" %></li>
@@ -15,6 +16,17 @@
           <li><%= link_to "team", "us.html" %></li>
           </ul>
         </div>
+      <!-- END OF DESKTOP MENU -->
+      <!-- MOBILE MENU -->
+        <div class="dropdown">
+          <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">more
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><%= link_to "roots", "roots.html" %></li>
+            <li><%= link_to "team", "us.html" %></li>
+          </ul>
+        </div>
+      <!-- END OF MOBILE MENU -->
       </div>
     </div>
   </div>
