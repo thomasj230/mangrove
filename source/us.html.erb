@@ -19,7 +19,7 @@
         <div class="col-sm-4 col-md-2 mangrover">
           <% link_to "https://twitter.com/" + mangrover[:twitter], target: "_blank" do %>
             <div class="mangrover-img">
-              <%= image_tag "team/core/" + mangrover[:lastname].downcase + ".jpg" %>
+              <%= image_tag "team/core/" + mangrover[:lastname].downcase.tr(" ", "_") + ".jpg" %>
             </div>
             <div class="mangrover-text">
               <%= mangrover[:firstname] %> <%= mangrover[:lastname] %>
@@ -71,4 +71,3 @@
 <script>
 new WOW().init();
 </script>
-
