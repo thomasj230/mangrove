@@ -11,17 +11,17 @@
           <!-- DESKTOP MENU -->
           <ul class="list-inline" id="menu">
           <li><%= link_to "roots", "roots.html" %></li>
-          <li data-toggle="tooltip" data-placement="bottom" title="coming soon"><%= link_to "open",  "#staytuned" %></li>
-          <li data-toggle="tooltip" data-placement="bottom" title="this summer!"><%= link_to "education", "#staytuned" %></li>
+          <li data-toggle="tooltip" data-placement="bottom" title="coming soon" class="soon"><%= link_to "open",  "#staytuned" %></li>
+          <li data-toggle="tooltip" data-placement="bottom" title="this summer!" class="soon"><%= link_to "education", "#staytuned" %></li>
           <li><%= link_to "team", "us.html" %></li>
           </ul>
         </div>
       <!-- END OF DESKTOP MENU -->
       <!-- MOBILE MENU -->
         <div class="dropdown">
-          <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">more
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
+          <div class="dropdown-toggle visible-xs" data-toggle="dropdown">more
+          <span class="caret"></span></div>
+          <ul class="dropdown-menu dropdown-menu-right">
             <li><%= link_to "roots", "roots.html" %></li>
             <li><%= link_to "team", "us.html" %></li>
           </ul>
