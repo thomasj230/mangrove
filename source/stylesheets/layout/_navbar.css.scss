@@ -33,9 +33,19 @@
         padding-right: 0.6em;
         a{
           color: white;
-        }
-        &:hover{
+          &:hover{
           color: white;
+          }
+        }
+        &.soon{
+          a:hover{
+            cursor: not-allowed;
+          }
+        }
+        .fa-external-link{
+          font-size: 12px;
+          padding-left: 3px;
+          font-weight: 700;
         }
       }
     }
@@ -53,13 +63,9 @@
   //     margin-left: 83%;
   //   }
   // }
-  // FOR MENU
-    #mobile-row{
-    margin-right: -101px;
-  }
-
   .dropdown-toggle{
-    margin-top: 2.5em;
+    margin-top: 2.2em;
+    text-align: right;
   }
   // END OF MENU
   #nav-container{

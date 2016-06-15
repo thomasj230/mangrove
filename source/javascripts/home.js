@@ -36,4 +36,9 @@ $(function() {
 
   $('[data-toggle="tooltip"]').tooltip();
 
+  // FIX BUG DROPDOWN MOBILE
+  $('[data-toggle=dropdown]').each(function() {
+    this.addEventListener('click', function() {}, false);
+  });
+
 });
